@@ -1,0 +1,49 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# Capacitor
+#
+DEF Capacitor C 0 40 Y N 1 F N
+F0 "C" 200 -100 60 H V C CNN
+F1 "Capacitor" 150 150 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+P 2 0 1 0  -50 100  -50 -100 N
+P 2 0 1 0  50 -100  50 -100 N
+P 2 0 1 0  50 100  50 -100 N
+X ~ 1 250 0 200 L 50 50 1 1 B
+X ~ 2 -250 0 200 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# Capacitor_Polarized
+#
+DEF Capacitor_Polarized C 0 40 Y N 1 F N
+F0 "C" 150 -150 60 H V C CNN
+F1 "Capacitor_Polarized" -50 150 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+A -250 0 224 266 -266 0 1 0 N -50 100 -50 -100
+P 2 0 1 0  50 100  50 -100 N
+X ~ 1 250 0 200 L 50 50 1 1 B
+X ~ 2 -250 0 220 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# Resistor
+#
+DEF Resistor R 0 40 Y Y 1 F N
+F0 "R" 150 -100 60 H V C CNN
+F1 "Resistor" 0 100 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+P 10 0 1 0  -100 0  -100 -50  -50 50  -50 -50  0 50  0 -50  50 50  50 -50  100 50  100 0 N
+X ~ 1 -300 0 200 R 50 50 1 1 B
+X ~ 2 300 0 200 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library
